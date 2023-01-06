@@ -1,0 +1,150 @@
+//
+// Project styles
+//
+
+// This file is intentionally blank
+// Use this file to override SCSS within the project, or to add new SCSS
+// for creating your own CSS components
+.card.bg-dark {
+    .card-header,
+    .card-footer {
+        color: $white;
+    }
+}
+
+// Override styling
+.card .card-header .card-header-tabs .nav-link.active {
+    color: $white;
+    border-bottom-color: $white;
+}
+
+.nav-borders .nav-link.active {
+    color: $white;
+    border-bottom-color: $white;
+}
+
+.bg-dark{
+    color: $gray-400;
+}
+
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
+    color: $white !important;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    @apply form-control;
+}
+
+.dataTables_wrapper .dataTables_length select {
+    @apply form-select;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    background-color: lighten($datatable-row-bg, 6%);
+    color: $datatable-row-color;
+}
+
+.table-striped > tbody > tr > td{
+    text-align: left;
+}
+
+table.dataTable tbody tr.even {
+    background-color: lighten($gray-800, 2%);
+    color: $datatable-row-color;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button{
+    border: 1px solid $datatable-paginate-border;
+    color: $datatable-paginate-color !important;
+    box-sizing: border-box;
+    display: inline-block;
+    min-width: 1.5em;
+    padding: 0.5em 1em;
+    margin-left: -1px;
+    text-align: center;
+    text-decoration: none !important;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover{
+    color: $datatable-paginate-color !important;
+    background: transparent;
+    background-color: darken($datatable-paginate-bg, 4%);
+    border: 1px solid $datatable-paginate-border;
+    cursor: pointer;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled  {
+    cursor: not-allowed;
+    color: $datatable-disabled-color !important;
+    border: 1px solid $datatable-disabled-border;
+    background-color: transparent;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover {
+    cursor: not-allowed;
+    color: $datatable-disabled-color !important;
+    background-color: lighten($datatable-disabled-bg, 1%);
+    border: 1px solid $datatable-disabled-border;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current{
+    cursor: pointer;
+    color: $datatable-current-color !important;
+    border: 1px solid $datatable-current-border;
+    background: transparent;
+    background-color: $datatable-current-bg;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    cursor: pointer;
+    color: $datatable-current-color !important;
+    border: 1px solid $datatable-current-border;
+    background: transparent;
+    background-color: darken($datatable-current-bg, 4%);
+}
+
+table.dataTable thead .sorting {
+    text-align: left;
+}
+
+table.dataTable tbody th, table.dataTable tbody td {
+    padding: 0.5rem 1.25rem;
+}
+.text-main-color{
+    color: $main-text-color;
+}
+.btn-danger{
+    color: darken($danger, 40%) !important;
+}
+.btn-success{
+    color: darken($success, 40%) !important;
+}
+.btn-warning{
+    color: #FFA300
+}
+
+.badge-danger{
+    background-color: $danger;
+    color: darken($danger, 40%) !important;
+}
+.badge-success{
+    background-color: $success;
+    color: darken($success, 40%) !important;
+}
+.badge-warning{
+    background-color: $warning;
+    color: #FFA300
+}
+.badge-primary{
+    background-color: $primary;
+    color: $white;
+}
+.badge-secondary{
+    background-color: $secondary;
+    color: $white;
+}
+.sidenav-menu-nested {
+    border-left-color: $main-text-color;
+}

@@ -1,0 +1,49 @@
+//
+// Color overrides
+//
+
+// This file is intentionally blank
+// Use this file to override any color variables within the project
+
+// You can also replace this file with a file exported from the customizer,
+// which you can access from the widget at https://themes.startbootstrap.com/sb-admin-pro/
+
+// * * * * * * * *
+// * * Example * *
+// * * * * * * * *
+
+// Uncomment below and rebuild the SCSS to see color changes in effect
+
+// $primary: #6589E5;
+$secondary: #024ea8;
+$success: #91E5B6;
+$danger: #F9CACA;
+$warning: #FCE19D;
+$main-text-color: #658ae5;
+// $gray-800: mix(lighten(#6b6a7f, 7%), $grayscale-base-hue, 93%);
+// $gray-900: mix(#6b6a7f, $grayscale-base-hue, 93%);
+$dark: $gray-900;
+// $sidenav-light-color: #6781B0;
+// $sidenav-light-bg: $main-text-color;
+// $sidenav-light-footer-bg: $main-text-color;
+// $sidenav-light-heading-color: #0E1A4C;
+.footer-admin {
+    background-color: $gray-900;
+}
+.bg-navbar {
+    background-color: $main-text-color;
+    @apply text-white;
+}
+
+//datatable
+$datatable-row-bg: $gray-800;
+$datatable-row-color: $gray-300;
+$datatable-paginate-bg: lighten($gray-800, 1%);
+$datatable-paginate-color: $gray-200;
+$datatable-paginate-border: $gray-400;
+$datatable-current-bg: $primary;
+$datatable-current-color: $gray-200;
+$datatable-current-border: $gray-400;
+$datatable-disabled-bg: lighten($gray-800, 1%);
+$datatable-disabled-color: $gray-200;
+$datatable-disabled-border: $gray-400;

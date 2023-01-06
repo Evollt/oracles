@@ -1,0 +1,86 @@
+// select and select2 styling
+
+select {
+    @apply form-select appearance-none block w-full px-3 py-1.5 text-base font-normal text-gray-700
+    bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition
+    ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none;
+}
+
+// select visible box
+.select2 {
+    @apply border border-gray-300 border-solid text-gray-700 font-normal block w-full text-base bg-white bg-clip-padding bg-no-repeat rounded;
+
+    &.select2-container--open {
+        @apply rounded-t rounded-b-none border-b-gray-300;
+
+        &.select2-container--above {
+            @apply rounded-b rounded-t-none border-gray-300 border-t-gray-300;
+        }
+    }
+
+    &.select2-container--disabled {
+        @apply bg-gray-100 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none;
+    }
+
+    .selection {
+        .select2-selection {
+            @apply px-1 py-2.5 block h-auto;
+
+            .select2-selection__clear {
+                @apply absolute right-4 top-2 text-xl text-gray-400;
+            }
+
+            &.select2-selection--multiple {
+                @apply py-1.5 px-0.5;
+
+                .select2-selection__clear {
+                    @apply hidden;
+                }
+
+                ul.select2-selection__rendered {
+                    @apply flex gap-1;
+
+                    input.select2-search__field {
+                        @apply float-none w-auto focus:outline-none my-1;
+                    }
+
+                    .select2-selection__choice {
+                        @apply w-min bg-gray-100 px-4 py-1 rounded;
+
+                        .select2-selection__choice__remove {
+                            @apply mr-2 text-gray-400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// select dropdown
+.select2-container {
+    .select2-dropdown {
+        @apply border-gray-300 text-gray-700 font-normal overflow-auto;
+
+        input.select2-search__field {
+            @apply form-control focus:border-gray-300 hover:border-gray-300 focus:outline-none focus:shadow-none;
+        }
+
+        ul.select2-results__options {
+            @apply overflow-y-scroll;
+            max-height: 200px;
+
+            li {
+                @apply py-2 px-3 bg-white text-base hover:bg-gray-200;
+
+                &[aria-selected=true] {
+                    @apply font-bold;
+                }
+
+                &:not(:last-child) {
+                    @apply border-b border-b-gray-200;
+                }
+            }
+        }
+    }
+}
